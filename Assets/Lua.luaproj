@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>E439935D-B2A2-46AE-856D-2AA408428F33</ProjectGuid>
+    <!--$guid1$-->
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>
+    </StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Lua\" />
+    <Folder Include="Lua\3rd\" />
+    <Folder Include="Lua\3rd\cjson\" />
+    <Folder Include="Lua\3rd\debug\" />
+    <Folder Include="Lua\3rd\luabitop\" />
+    <Folder Include="Lua\3rd\luabitop\doc\" />
+    <Folder Include="Lua\3rd\luabitop\doc\img\" />
+    <Folder Include="Lua\3rd\pbc\" />
+    <Folder Include="Lua\3rd\pblua\" />
+    <Folder Include="Lua\3rd\sproto\" />
+    <Folder Include="Lua\Common\" />
+    <Folder Include="Lua\Controller\" />
+    <Folder Include="Lua\Logic\" />
+    <Folder Include="Lua\System\" />
+    <Folder Include="Lua\View\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lua\3rd.meta" />
+    <Content Include="Lua\3rd\cjson.meta" />
+    <Content Include="Lua\3rd\cjson\example1.json" />
+    <Content Include="Lua\3rd\cjson\example1.json.meta" />
+    <Content Include="Lua\3rd\cjson\example2.json" />
+    <Content Include="Lua\3rd\cjson\example2.json.meta" />
+    <Content Include="Lua\3rd\cjson\example3.json" />
+    <Content Include="Lua\3rd\cjson\example3.json.meta" />
+    <Content Include="Lua\3rd\cjson\example4.json" />
+    <Content Include="Lua\3rd\cjson\example4.json.meta" />
+    <Content Include="Lua\3rd\cjson\example5.json" />
+    <Content Include="Lua\3rd\cjson\example5.json.meta" />
+    <Content Include="Lua\3rd\cjson\json2lua.lua.meta" />
+    <Content Include="Lua\3rd\cjson\lua2json.lua.meta" />
+    <Content Include="Lua\3rd\cjson\test.lua.meta" />
+    <Content Include="Lua\3rd\cjson\util.lua.meta" />
+    <Content Include="Lua\3rd\debug.meta" />
+    <Content Include="Lua\3rd\luabitop.meta" />
+    <Content Include="Lua\3rd\luabitop\bitbench.lua.meta" />
+    <Content Include="Lua\3rd\luabitop\bittest.lua.meta" />
+    <Content Include="Lua\3rd\luabitop\doc.meta" />
+    <Content Include="Lua\3rd\luabitop\doc\api.html" />
+    <Content Include="Lua\3rd\luabitop\doc\api.html.meta" />
+    <Content Include="Lua\3rd\luabitop\doc\bluequad-print.css" />
+    <Content Include="Lua\3rd\luabitop\doc\bluequad-print.css.meta" />
+    <Content Include="Lua\3rd\luabitop\doc\bluequad.css" />
+    <Content Include="Lua\3rd\luabitop\doc\bluequad.css.meta" />
+    <Content Include="Lua\3rd\luabitop\doc\changes.html" />
+    <Content Include="Lua\3rd\luabitop\doc\changes.html.meta" />
+    <Content Include="Lua\3rd\luabitop\doc\contact.html" />
+    <Content Include="Lua\3rd\luabitop\doc\contact.html.meta" />
+    <Content Include="Lua\3rd\luabitop\doc\img.meta" />
+    <Content Include="Lua\3rd\luabitop\doc\img\contact.png" />
+    <Content Include="Lua\3rd\luabitop\doc\img\contact.png.meta" />
+    <Content Include="Lua\3rd\luabitop\doc\index.html" />
+    <Content Include="Lua\3rd\luabitop\doc\index.html.meta" />
+    <Content Include="Lua\3rd\luabitop\doc\install.html" />
+    <Content Include="Lua\3rd\luabitop\doc\install.html.meta" />
+    <Content Include="Lua\3rd\luabitop\doc\semantics.html" />
+    <Content Include="Lua\3rd\luabitop\doc\semantics.html.meta" />
+    <Content Include="Lua\3rd\luabitop\installpath.lua.meta" />
+    <Content Include="Lua\3rd\luabitop\Makefile" />
+    <Content Include="Lua\3rd\luabitop\Makefile.meta" />
+    <Content Include="Lua\3rd\luabitop\Makefile.mingw" />
+    <Content Include="Lua\3rd\luabitop\Makefile.mingw.meta" />
+    <Content Include="Lua\3rd\luabitop\md5test.lua.meta" />
+    <Content Include="Lua\3rd\luabitop\msvcbuild.bat" />
+    <Content Include="Lua\3rd\luabitop\msvcbuild.bat.meta" />
+    <Content Include="Lua\3rd\luabitop\msvctest.bat" />
+    <Content Include="Lua\3rd\luabitop\msvctest.bat.meta" />
+    <Content Include="Lua\3rd\luabitop\nsievebits.lua.meta" />
+    <Content Include="Lua\3rd\luabitop\README" />
+    <Content Include="Lua\3rd\luabitop\README.meta" />
+    <Content Include="Lua\3rd\pbc.meta" />
+    <Content Include="Lua\3rd\pbc\addressbook.pb" />
+    <Content Include="Lua\3rd\pbc\addressbook.pb.meta" />
+    <Content Include="Lua\3rd\pbc\addressbook.proto" />
+    <Content Include="Lua\3rd\pbc\addressbook.proto.meta" />
+    <Content Include="Lua\3rd\pbc\parser.lua.meta" />
+    <Content Include="Lua\3rd\pbc\protobuf.lua.meta" />
+    <Content Include="Lua\3rd\pbc\test.lua.meta" />
+    <Content Include="Lua\3rd\pbc\test2.lua.meta" />
+    <Content Include="Lua\3rd\pbc\testparser.lua.meta" />
+    <Content Include="Lua\3rd\pblua.meta" />
+    <Content Include="Lua\3rd\pblua\login.proto" />
+    <Content Include="Lua\3rd\pblua\login.proto.meta" />
+    <Content Include="Lua\3rd\pblua\login_pb.lua.meta" />
+    <Content Include="Lua\3rd\pblua\person_pb.lua.meta" />
+    <Content Include="Lua\3rd\sproto.meta" />
+    <Content Include="Lua\3rd\sproto\print_r.lua.meta" />
+    <Content Include="Lua\3rd\sproto\sproto.lua.meta" />
+    <Content Include="Lua\3rd\sproto\sprotoparser.lua.meta" />
+    <Content Include="Lua\3rd\sproto\test.lua.meta" />
+    <Content Include="Lua\3rd\sproto\testall.lua.meta" />
+    <Content Include="Lua\3rd\sproto\testrpc.lua.meta" />
+    <Content Include="Lua\Common.meta" />
+    <Content Include="Lua\Common\ConvertToC.lua.meta" />
+    <Content Include="Lua\Common\define.lua.meta" />
+    <Content Include="Lua\Common\functions.lua.meta" />
+    <Content Include="Lua\Common\protocal.lua.meta" />
+    <Content Include="Lua\containers.lua.meta" />
+    <Content Include="Lua\Controller.meta" />
+    <Content Include="Lua\Controller\MessageCtrl.lua.meta" />
+    <Content Include="Lua\Controller\PromptCtrl.lua.meta" />
+    <Content Include="Lua\Controller\TestUICtrl.lua.meta" />
+    <Content Include="Lua\debugger.lua.meta" />
+    <Content Include="Lua\decoder.lua.meta" />
+    <Content Include="Lua\descriptor.lua.meta" />
+    <Content Include="Lua\encoder.lua.meta" />
+    <Content Include="Lua\eventlib.lua.meta" />
+    <Content Include="Lua\events.lua.meta" />
+    <Content Include="Lua\listener.lua.meta" />
+    <Content Include="Lua\Logic.meta" />
+    <Content Include="Lua\Logic\CtrlManager.lua.meta" />
+    <Content Include="Lua\Logic\GameManager.lua.meta" />
+    <Content Include="Lua\Logic\LuaClass.lua.meta" />
+    <Content Include="Lua\Logic\Network.lua.meta" />
+    <Content Include="Lua\protobuf.lua.meta" />
+    <Content Include="Lua\System.meta" />
+    <Content Include="Lua\System\Bounds.lua.meta" />
+    <Content Include="Lua\System\Build.bat" />
+    <Content Include="Lua\System\Build.bat.meta" />
+    <Content Include="Lua\System\class.lua.meta" />
+    <Content Include="Lua\System\Color.lua.meta" />
+    <Content Include="Lua\System\Coroutine.lua.meta" />
+    <Content Include="Lua\System\Event.lua.meta" />
+    <Content Include="Lua\System\Global.lua.meta" />
+    <Content Include="Lua\System\Layer.lua.meta" />
+    <Content Include="Lua\System\List.lua.meta" />
+    <Content Include="Lua\System\Main.lua.meta" />
+    <Content Include="Lua\System\Math.lua.meta" />
+    <Content Include="Lua\System\Plane.lua.meta" />
+    <Content Include="Lua\System\Quaternion.lua.meta" />
+    <Content Include="Lua\System\Ray.lua.meta" />
+    <Content Include="Lua\System\Raycast.lua.meta" />
+    <Content Include="Lua\System\readme.txt" />
+    <Content Include="Lua\System\readme.txt.meta" />
+    <Content Include="Lua\System\Set.lua.meta" />
+    <Content Include="Lua\System\strict.lua.meta" />
+    <Content Include="Lua\System\Test.lua.meta" />
+    <Content Include="Lua\System\Time.lua.meta" />
+    <Content Include="Lua\System\Timer.lua.meta" />
+    <Content Include="Lua\System\Touch.lua.meta" />
+    <Content Include="Lua\System\Vector2.lua.meta" />
+    <Content Include="Lua\System\Vector3.lua.meta" />
+    <Content Include="Lua\System\Vector4.lua.meta" />
+    <Content Include="Lua\System\Wrap.lua.meta" />
+    <Content Include="Lua\text_format.lua.meta" />
+    <Content Include="Lua\type_checkers.lua.meta" />
+    <Content Include="Lua\View.meta" />
+    <Content Include="Lua\View\MessagePanel.lua.meta" />
+    <Content Include="Lua\View\PromptPanel.lua.meta" />
+    <Content Include="Lua\View\TestUIPanel.lua.meta" />
+    <Content Include="Lua\wire_format.lua.meta" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Lua\3rd\cjson\json2lua.lua" />
+    <Compile Include="Lua\3rd\cjson\lua2json.lua" />
+    <Compile Include="Lua\3rd\cjson\test.lua" />
+    <Compile Include="Lua\3rd\cjson\util.lua" />
+    <Compile Include="Lua\3rd\luabitop\bitbench.lua" />
+    <Compile Include="Lua\3rd\luabitop\bittest.lua" />
+    <Compile Include="Lua\3rd\luabitop\installpath.lua" />
+    <Compile Include="Lua\3rd\luabitop\md5test.lua" />
+    <Compile Include="Lua\3rd\luabitop\nsievebits.lua" />
+    <Compile Include="Lua\3rd\pbc\parser.lua" />
+    <Compile Include="Lua\3rd\pbc\protobuf.lua" />
+    <Compile Include="Lua\3rd\pbc\test.lua" />
+    <Compile Include="Lua\3rd\pbc\test2.lua" />
+    <Compile Include="Lua\3rd\pbc\testparser.lua" />
+    <Compile Include="Lua\3rd\pblua\login_pb.lua" />
+    <Compile Include="Lua\3rd\pblua\person_pb.lua" />
+    <Compile Include="Lua\3rd\sproto\print_r.lua" />
+    <Compile Include="Lua\3rd\sproto\sproto.lua" />
+    <Compile Include="Lua\3rd\sproto\sprotoparser.lua" />
+    <Compile Include="Lua\3rd\sproto\test.lua" />
+    <Compile Include="Lua\3rd\sproto\testall.lua" />
+    <Compile Include="Lua\3rd\sproto\testrpc.lua" />
+    <Compile Include="Lua\Common\ConvertToC.lua" />
+    <Compile Include="Lua\Common\define.lua" />
+    <Compile Include="Lua\Common\functions.lua" />
+    <Compile Include="Lua\Common\protocal.lua" />
+    <Compile Include="Lua\containers.lua" />
+    <Compile Include="Lua\Controller\MessageCtrl.lua" />
+    <Compile Include="Lua\Controller\PromptCtrl.lua" />
+    <Compile Include="Lua\Controller\TestUICtrl.lua" />
+    <Compile Include="Lua\debugger.lua" />
+    <Compile Include="Lua\decoder.lua" />
+    <Compile Include="Lua\descriptor.lua" />
+    <Compile Include="Lua\encoder.lua" />
+    <Compile Include="Lua\eventlib.lua" />
+    <Compile Include="Lua\events.lua" />
+    <Compile Include="Lua\listener.lua" />
+    <Compile Include="Lua\Logic\CtrlManager.lua" />
+    <Compile Include="Lua\Logic\GameManager.lua" />
+    <Compile Include="Lua\Logic\LuaClass.lua" />
+    <Compile Include="Lua\Logic\Network.lua" />
+    <Compile Include="Lua\protobuf.lua" />
+    <Compile Include="Lua\System\Bounds.lua" />
+    <Compile Include="Lua\System\class.lua" />
+    <Compile Include="Lua\System\Color.lua" />
+    <Compile Include="Lua\System\Coroutine.lua" />
+    <Compile Include="Lua\System\Event.lua" />
+    <Compile Include="Lua\System\Global.lua" />
+    <Compile Include="Lua\System\Layer.lua" />
+    <Compile Include="Lua\System\List.lua" />
+    <Compile Include="Lua\System\Main.lua" />
+    <Compile Include="Lua\System\Math.lua" />
+    <Compile Include="Lua\System\Plane.lua" />
+    <Compile Include="Lua\System\Quaternion.lua" />
+    <Compile Include="Lua\System\Ray.lua" />
+    <Compile Include="Lua\System\Raycast.lua" />
+    <Compile Include="Lua\System\Set.lua" />
+    <Compile Include="Lua\System\strict.lua" />
+    <Compile Include="Lua\System\Test.lua" />
+    <Compile Include="Lua\System\Time.lua" />
+    <Compile Include="Lua\System\Timer.lua" />
+    <Compile Include="Lua\System\Touch.lua" />
+    <Compile Include="Lua\System\Vector2.lua" />
+    <Compile Include="Lua\System\Vector3.lua" />
+    <Compile Include="Lua\System\Vector4.lua" />
+    <Compile Include="Lua\System\Wrap.lua" />
+    <Compile Include="Lua\text_format.lua" />
+    <Compile Include="Lua\type_checkers.lua" />
+    <Compile Include="Lua\View\MessagePanel.lua" />
+    <Compile Include="Lua\View\PromptPanel.lua" />
+    <Compile Include="Lua\View\TestUIPanel.lua" />
+    <Compile Include="Lua\wire_format.lua" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" />
+</Project>

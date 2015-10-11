@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <scene sceneName="Assets/SceneGame/TitleScene.unity">
+    <gameObject objectName="GUI" objectAsset="GUI.prefab">
+      <transform>
+        <position>
+          <x>0</x>
+          <y>0</y>
+          <z>0</z>
+        </position>
+        <rotation>
+          <x>0</x>
+          <y>0</y>
+          <z>0</z>
+        </rotation>
+        <scale>
+          <x>1</x>
+          <y>1</y>
+          <z>1</z>
+        </scale>
+      </transform>
+    </gameObject>
+    <gameObject objectName="Vampire" objectAsset="Vampire.prefab">
+      <transform>
+        <position>
+          <x>0.3393044</x>
+          <y>0</y>
+          <z>11.67358</z>
+        </position>
+        <rotation>
+          <x>0</x>
+          <y>335.8996</y>
+          <z>0</z>
+        </rotation>
+        <scale>
+          <x>1</x>
+          <y>1</y>
+          <z>1</z>
+        </scale>
+      </transform>
+    </gameObject>
+    <gameObject objectName="Lycan" objectAsset="Lycan.prefab">
+      <transform>
+        <position>
+          <x>0.3393044</x>
+          <y>0</y>
+          <z>11.67358</z>
+        </position>
+        <rotation>
+          <x>0</x>
+          <y>335.8996</y>
+          <z>0</z>
+        </rotation>
+        <scale>
+          <x>1</x>
+          <y>1</y>
+          <z>1</z>
+        </scale>
+      </transform>
+    </gameObject>
+    <gameObject objectName="Maincam" objectAsset="Maincam.prefab">
+      <transform>
+        <position>
+          <x>-0.1195779</x>
+          <y>0.6700783</y>
+          <z>12.7698</z>
+        </position>
+        <rotation>
+          <x>353.0494</x>
+          <y>177.548</y>
+          <z>0.2969112</z>
+        </rotation>
+        <scale>
+          <x>1</x>
+          <y>1</y>
+          <z>1</z>
+        </scale>
+      </transform>
+    </gameObject>
+    <gameObject objectName="Road" objectAsset="StaterPlatform.prefab">
+      <transform>
+        <position>
+          <x>0</x>
+          <y>0</y>
+          <z>0</z>
+        </position>
+        <rotation>
+          <x>0</x>
+          <y>0</y>
+          <z>0</z>
+        </rotation>
+        <scale>
+          <x>1</x>
+          <y>1</y>
+          <z>1</z>
+        </scale>
+      </transform>
+    </gameObject>
+  </scene>
+</root>

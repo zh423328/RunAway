@@ -54,9 +54,13 @@ public class Packager {
     /// 生成绑定素材
     /// </summary>
     public static void BuildAssetResource(BuildTarget target, bool isWin) {
-        if (AppConst.ExampleMode) {
+        if (AppConst.ExampleMode) 
+        {
             HandleExampleBundle(target);
         }
+        //导出场景
+        Export.ExportSceneToAssetBundle(target);
+        Export.ExportScene(target);
         HandleLuaFile(isWin);
         AssetDatabase.Refresh();
     }

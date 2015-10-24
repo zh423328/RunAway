@@ -86,15 +86,17 @@ namespace SimpleFramework.Manager {
 
             string infile = resPath + "files.txt";
             string outfile = dataPath + "files.txt";
-            if (File.Exists(outfile))
-                File.Delete(outfile);
+
+            //if (File.Exists(outfile))
+            //    File.Delete(outfile);
 
             string message = "正在解包文件:>files.txt";
             Debug.Log(message);
             facade.SendMessageCommand(NotiConst.UPDATE_MESSAGE, message);
 
-
+#if     !UNITY_ANDROID
             if (File.Exists(infile))
+#endif
             {
                 if (Application.platform == RuntimePlatform.Android)
                 {
@@ -128,8 +130,10 @@ namespace SimpleFramework.Manager {
                     if (!Directory.Exists(dir))
                         Directory.CreateDirectory(dir);
 
+#if     !UNITY_ANDROID
                     if (!File.Exists(infile))
                         continue;
+#endif
 
                     if (Application.platform == RuntimePlatform.Android)
                     {
@@ -154,7 +158,6 @@ namespace SimpleFramework.Manager {
                 }
             }
             
-
          
             message = "解包完成!!!";
             facade.SendMessageCommand(NotiConst.UPDATE_MESSAGE, message);

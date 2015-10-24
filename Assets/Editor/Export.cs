@@ -6,7 +6,7 @@ using System.IO;
 using System.Xml;
 using SimpleFramework;
 
-public class Export:Editor
+public class Export
 {
     [MenuItem("Export/ExportScene")]
     static void ExportSceneToXml()
@@ -146,8 +146,7 @@ public class Export:Editor
         AssetDatabase.Refresh();
     }
 
-    [MenuItem("Export/ExportToAssetBundle")]
-    static void ExportSceneToAssetBundle()
+    public static void ExportSceneToAssetBundle(BuildTarget target)
     {
         string assetPath = Application.streamingAssetsPath + @"/Perfab/";
         string bundlePath = Application.streamingAssetsPath + @"/AssetBundle/";
@@ -172,7 +171,7 @@ public class Export:Editor
                 //buildAsset
                 strFilepath = strFilepath.Replace(".prefab", ".assetbundle");
                 BuildPipeline.BuildAssetBundle(o, null, bundlePath + strFilepath, BuildAssetBundleOptions.CollectDependencies | BuildAssetBundleOptions.CompleteAssets 
-                    | BuildAssetBundleOptions.DeterministicAssetBundle,BuildTarget.StandaloneWindows);
+                    | BuildAssetBundleOptions.DeterministicAssetBundle,target);
             }
 
         }
@@ -180,77 +179,8 @@ public class Export:Editor
         AssetDatabase.Refresh();
     }
 
-    static void  GetFileList(List<string> filepathlist,string filepath)
-    {
-        //获取里面所有的文件
-        if (!Directory.Exists(filepath))
-            return;
 
-        string[] fileinfolist =Directory.GetFiles(filepath);
-        foreach (string fileinfo in fileinfolist)
-        {
-            if (fileinfo.EndsWith(".svn") || fileinfo.EndsWith(".meta") || fileinfo.EndsWith(".prefab"))
-                continue;
-            //去除filetxt
-            if (fileinfo.EndsWith("files.txt"))
-                continue;
-
-            filepathlist.Add(fileinfo);
-        }
-
-        //递归访问所有路径
-        string[] dirpath = Directory.GetDirectories(filepath);
-
-        for (int i = 0; i < dirpath.Length; ++i )
-        {
-            GetFileList(filepathlist, dirpath[i]);
-        }
-    }
-
-    [MenuItem("Export/Create Md5")]
-    static void CreateFileMd5()
-    {
-        if (!Directory.Exists(Util.AppContentPath()))
-        {
-            Directory.CreateDirectory(Util.AppContentPath());
-        }
-        //产生md5文件
-        string files = Util.AppContentPath() + "files.txt";
-
-        if (File.Exists(files))
-        {
-            File.Delete(files);
-        }
-
-        //打开文件路径
-        List<string> filelist = new List<string>();
-
-        GetFileList(filelist, Util.AppContentPath());
-
-
-        using (FileStream write = new FileStream(files, FileMode.OpenOrCreate))
-        {
-            //计算md5
-            for (int i = 0; i < filelist.Count; ++i)
-            {
-                string filepath = filelist[i];
-                string md5value = Util.md5file(filepath);
-
-
-                //取值
-                filepath = filepath.Substring(Util.AppContentPath().Length);
-
-                string value = filepath + "|" + md5value + "\r\n";
-
-                byte[] data = System.Text.Encoding.Default.GetBytes(value);
-                write.Write(data, 0, data.Length);
-            }
-        }
-        AssetDatabase.Refresh();
-    }
-
-    [MenuItem("Export/ExportDepenceScene")]
-    static void ExportScene()
+    public static void ExportScene(BuildTarget target)
     {
         Caching.CleanCache();
         //导出场景
@@ -278,8 +208,9 @@ public class Export:Editor
                 strFilename = strFilename.Replace(".unity",".unity3d");
 
                 //buildstreamsceneAssetBundle和Buildplayer一样
-                BuildPipeline.BuildStreamedSceneAssetBundle(new string[1] { scene.path }, sceneExport + strFilename, BuildTarget.StandaloneWindows);
+                BuildPipeline.BuildStreamedSceneAssetBundle(new string[1] { scene.path }, sceneExport + strFilename, target);
             }
         }
     }
+
 }
